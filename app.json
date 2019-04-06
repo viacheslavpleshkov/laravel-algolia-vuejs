@@ -1,0 +1,116 @@
+{
+  "name": "Laravel Algolia Vue.js",
+  "description": "Laravel 5.8 Framework using Algolia",
+  "repository": "https://github.com/slava-pleshkov/laravel-algolia-vuejs",
+  "logo": "https://github.com/slava-pleshkov/laravel-algolia-vuejs/blob/master/public/images/logo-algolia-nebula-blue-full.png?raw=true",
+  "keywords": [
+    "php",
+    "laravel",
+    "algolia"
+  ],
+  "env": {
+    "APP_NAME": {
+      "value": "Laravel Algolia Vue.js"
+    },
+    "APP_ENV": {
+      "value": "production"
+    },
+    "APP_KEY": {
+      "generator": "secret"
+    },
+    "APP_DEBUG": {
+      "value": "false"
+    },
+    "TELESCOPE_ENABLED": {
+      "value": "false"
+    },
+    "APP_URL": {
+      "generator": "secret"
+    },
+    "LOG_CHANNEL": {
+      "value": "errorlog"
+    },
+    "DB_CONNECTION": {
+      "value": "pgsql"
+    },
+    "DB_HOST": {
+      "generator": "secret"
+    },
+    "DB_PORT": {
+      "generator": "secret"
+    },
+    "DB_DATABASE": {
+      "generator": "secret"
+    },
+    "DB_USERNAME": {
+      "generator": "secret"
+    },
+    "DB_PASSWORD": {
+      "generator": "secret"
+    },
+    "REDIS_HOST": {
+      "generator": "secret"
+    },
+    "REDIS_PASSWORD": {
+      "generator": "secret"
+    },
+    "REDIS_PORT": {
+      "generator": "secret"
+    },
+    "BROADCAST_DRIVER": {
+      "value": "log"
+    },
+    "CACHE_DRIVER": {
+      "value": "redis"
+    },
+    "SESSION_DRIVER": {
+      "value": "redis"
+    },
+    "SESSION_LIFETIME": {
+      "value": "120"
+    },
+    "QUEUE_DRIVER": {
+      "value": "sync"
+    },
+    "MAIL_DRIVER": {
+      "generator": "secret"
+    },
+    "MAIL_HOST": {
+      "generator": "secret"
+    },
+    "MAIL_PORT": {
+      "generator": "secret"
+    },
+    "MAIL_USERNAME": {
+      "generator": "secret"
+    },
+    "MAIL_PASSWORD": {
+      "generator": "secret"
+    },
+    "MAIL_ENCRYPTION": {
+      "generator": "secret"
+    },
+    "MAIL_FROM_ADDRESS": {
+      "generator": "secret"
+    },
+    "MAIL_FROM_NAME": {
+      "generator": "secret"
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql"
+    },
+    {
+      "plan": "heroku-redis"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-php"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}
