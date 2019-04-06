@@ -3,7 +3,7 @@
         <img src="https://laravel.com/assets/img/components/logo-laravel.svg" height="100px">
     </a>
     <a href="https://sp-laravel-algolia-vuejs.herokuapp.com/" target="_blank">
-        <img src="https://github.com/slava-pleshkov/laravel-algolia-vuejs/blob/master/public/images/logo-algolia-nebula-blue-full.png?raw=true" height="100px" width="300px">
+        <img src="https://github.com/slava-pleshkov/laravel-algolia-vuejs/blob/master/public/images/logo-algolia-nebula-blue-full.png?raw=true" height="100px"">
     </a>
     <h1 align="center">laravel-algolia-vuejs</h1>
     <br>
@@ -28,6 +28,7 @@ HTML5, CSS3, JavaScript, Vue.js, Webpack, Yarn, PHP, Laravel Framework, Laravel 
 1. Set your `APP_URL` in your `.env` file
 1. Set your `APP_DEBUG` in your `.env` file with the value `true`
 1. Set your `TELESCOPE_ENABLED` in your `.env` file with the value `true`
+1. Run this command `php artisan scout:import "App\Models\Post"`
 1. Run this command `php artisan config:cache`
 1. Run this command `php artisan db:seed`
 1. Run this command `yarn install`
@@ -50,6 +51,7 @@ HTML5, CSS3, JavaScript, Vue.js, Webpack, Yarn, PHP, Laravel Framework, Laravel 
 1. Set your `APP_URL` in your `.env` file
 1. Set your `APP_DEBUG` in your `.env` file with the value `false`
 1. Set your `TELESCOPE_ENABLED` in your `.env` file with the value `false`
+1. Run this command `php artisan scout:import "App\Models\Post"`
 1. Run this command `php artisan config:cache`
 1. Run this command `php artisan db:seed`
 1. Run this command `yarn install`
@@ -63,7 +65,11 @@ HTML5, CSS3, JavaScript, Vue.js, Webpack, Yarn, PHP, Laravel Framework, Laravel 
 1. Run this command `heroku buildpacks:set heroku/nodejs`
 1. Run this command `heroku addons:create heroku-postgresql:hobby-dev`
 1. Run this command `heroku addons:create heroku-redis:hobby-dev`
-1. Run this command `heroku config:set APP_NAME=Wordsmith`
+1. Run this command `heroku addons:create scheduler:standard`
+1. Run this command `heroku addons:create algoliasearch:free`
+1. Run this command `heroku addons:create mailtrap:free`
+1. Run this command `heroku addons:create timber-logging:free`
+1. Run this command `heroku config:set APP_NAME=Laravel Algolia Vue.js`
 1. Run this command `heroku config:set APP_ENV=production`
 1. Run this command `heroku config:set APP_KEY=secret`
 1. Run this command `heroku config:set APP_DEBUG=secret`
@@ -79,11 +85,13 @@ HTML5, CSS3, JavaScript, Vue.js, Webpack, Yarn, PHP, Laravel Framework, Laravel 
 1. Run this command `heroku config:set REDIS_HOST=secret`
 1. Run this command `heroku config:set REDIS_PASSWORD=secret`
 1. Run this command `heroku config:set REDIS_PORT=secret`
+1. Run this command `heroku config:set ALGOLIA_APP_ID=secret`
+1. Run this command `heroku config:set ALGOLIA_SECRET=secret`
 1. Run this command `heroku config:set BROADCAST_DRIVER=log`
 1. Run this command `heroku config:set CACHE_DRIVER=redis`
 1. Run this command `heroku config:set SESSION_DRIVER=redis`
 1. Run this command `heroku config:set SESSION_LIFETIME=120`
-1. Run this command `heroku config:set QUEUE_DRIVER=sync`
+1. Run this command `heroku config:set QUEUE_DRIVER=redis`
 1. Run this command `heroku config:set MAIL_DRIVER=secret`
 1. Run this command `heroku config:set MAIL_HOST=secret`
 1. Run this command `heroku config:set MAIL_USERNAME=secret`

@@ -57,6 +57,12 @@
     "REDIS_PORT": {
       "generator": "secret"
     },
+    "ALGOLIA_APP_ID": {
+      "generator": "secret"
+    },
+    "ALGOLIA_SECRET": {
+      "generator": "secret"
+    },
     "BROADCAST_DRIVER": {
       "value": "log"
     },
@@ -70,7 +76,7 @@
       "value": "120"
     },
     "QUEUE_DRIVER": {
-      "value": "sync"
+      "value": "redis"
     },
     "MAIL_DRIVER": {
       "generator": "secret"
@@ -103,7 +109,20 @@
     },
     {
       "plan": "heroku-redis"
+    },
+    {
+      "plan": "scheduler"
+    },
+    {
+      "plan": "algoliasearch"
+    },
+    {
+      "plan": "mailtrap"
+    },
+    {
+      "plan": "timber-logging"
     }
+
   ],
   "buildpacks": [
     {
